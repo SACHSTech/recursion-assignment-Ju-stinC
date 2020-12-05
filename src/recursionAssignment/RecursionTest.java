@@ -23,15 +23,21 @@ public class RecursionTest {
      */
     @Test
     public void Test1(){
-      // assertEquals(EXPECTEDVALUE, TESTVALUE);
       assertEquals(Recursion.count7(717), 717);
-      // assertTrue(TESTBOOLEAN);
+      // initial failing test (red)
     }
+
+    // green: adding method (count7) to Recursion.java to make the test pass
 
     @Test
     public void Test2(){
-    // assertEquals(EXPECTEDVALUE, TESTVALUE);
     assertEquals(Recursion.count7(7), 1);
-    // assertTrue(TESTBOOLEAN);
+    // refactor
+    }
+
+    @Test
+    public void Test3(){
+    assertEquals(Recursion.count7(123), 0);
+    // red state 2
     }
 }

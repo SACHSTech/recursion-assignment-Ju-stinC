@@ -26,8 +26,12 @@ public class RecursionTest {
       // assertEquals(EXPECTEDVALUE, TESTVALUE);
       assertEquals(Recursion.count7(717), 717);
       // assertTrue(TESTBOOLEAN);
+    }
 
-    // add more tests
-
+    @Test
+    public void Test2(){
+    // assertEquals(EXPECTEDVALUE, TESTVALUE);
+    assertEquals(Recursion.count7(7), 1);
+    // assertTrue(TESTBOOLEAN);
     }
 }

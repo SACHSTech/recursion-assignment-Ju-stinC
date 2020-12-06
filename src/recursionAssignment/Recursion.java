@@ -23,6 +23,12 @@ public class Recursion {
 
   public static String changePi(String str) {
 
+    if (str.equals("")) {
+
+      return str;
+
+    }
+    
     return str;
 
   }

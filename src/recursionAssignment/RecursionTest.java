@@ -50,4 +50,9 @@ public class RecursionTest {
     public void Test6(){
     assertEquals(Recursion.count7(0), 0);
     }
+
+    @Test
+    public void Test7(){
+    assertEquals("x3.14x", Recursion.changePi("xpix"));
+    }
 }

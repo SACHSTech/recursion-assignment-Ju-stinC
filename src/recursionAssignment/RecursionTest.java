@@ -24,6 +24,7 @@ public class RecursionTest {
     @Test
     public void Test1(){
       assertEquals(Recursion.count7(717), 2);
+      // initial red state
     }
 
     @Test
@@ -54,10 +55,27 @@ public class RecursionTest {
     @Test
     public void Test7(){
     assertEquals("", Recursion.changePi(""));
+    // when str is an empty string (initial red state)
     }
 
     @Test
     public void Test8(){
     assertEquals("x3.14x", Recursion.changePi("xpix"));
+    }
+
+    @Test
+    public void Test9(){
+    assertEquals("3.143.14", Recursion.changePi("pipi"));
+    }
+
+    @Test
+    public void Test10(){
+    assertEquals("3.14p", Recursion.changePi("pip"));
+    }
+
+    @Test
+    public void Test11(){
+    assertEquals("p", Recursion.changePi("p"));
+    // when the length of str is less than 2
     }
 }

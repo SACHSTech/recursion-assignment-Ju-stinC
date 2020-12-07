@@ -23,13 +23,18 @@ public class Recursion {
 
   public static String changePi(String str) {
 
-    if (str.equals("")) {
+    // base case
+    if (str.length() < 2) {
 
       return str;
 
+    }else if (str.substring(0, 2).equals("pi")) {
+      // recursive case
+      return "3.14" + Recursion.changePi(str.substring(2)); 
+
     }else {
 
-      return "x3.14x";
+      return str.charAt(0) + Recursion.changePi(str.substring(1));
 
     }
 

@@ -42,6 +42,13 @@ public class Recursion {
 
   public static boolean array220(int[] intNums, int index) {
 
+    // base case
+    if(index == intNums.length) {
+
+      return false;
+
+    }
+
     return true;
 
   }

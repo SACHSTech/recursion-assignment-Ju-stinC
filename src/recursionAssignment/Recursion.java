@@ -47,9 +47,19 @@ public class Recursion {
 
       return false;
 
+    }else if(index + 1 == 1) {
+
+      return false;
+
     }
 
-    return true;
+    if (intNums[index + 1] % 10 == 0) {
+      // recursive case
+      return true;
+
+    }
+
+    return false;
 
   }
 

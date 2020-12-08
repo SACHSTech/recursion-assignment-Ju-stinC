@@ -43,21 +43,17 @@ public class Recursion {
   public static boolean array220(int[] intNums, int index) {
 
     // base case
-    if(index == intNums.length) {
-
-      return false;
-
-    }else if(index + 1 == 1) {
+    if(index == intNums.length - 1) {
 
       return false;
 
     }
 
-    if (intNums[index + 1] % 10 == 0) {
+    if (intNums[index] * 10 == intNums[index + 1] || array220(intNums, index + 1)) {
       // recursive case
       return true;
 
-    }
+    }  
 
     return false;
 
